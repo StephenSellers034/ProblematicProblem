@@ -64,7 +64,7 @@ static bool cont = true;
                             Console.Write($"{activity} ");
                             Thread.Sleep(250);
                         }
-
+                        
                         Console.WriteLine();
                         Console.WriteLine("Would you like to add more? yes/no: ");
                         addToList = false;
@@ -72,14 +72,11 @@ static bool cont = true;
                         {
                             addToList = true;
                         }
-                        else if (Console.ReadLine().ToLower() == "no")
+                        else 
                         {
                             addToList = false;
                         }
-                        else
-                        {
-                            addToList = false;
-                        }
+                        
                     }
                 }
 
